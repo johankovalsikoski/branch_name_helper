@@ -1,4 +1,5 @@
 # Branch Name Helper
+![](https://i.ibb.co/p0LQ897/Screen-Shot-2020-10-23-at-9-43-25-AM.png)
 
 ## What is it?
 
