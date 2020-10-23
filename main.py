@@ -22,8 +22,8 @@ def setup_window_position():
     window.geometry('+%d+%d' % (x, y))
 
 def show_branch_name():
-    branchPrefix = taskPrefixEntry.get().upper() + "/"
-    branchName = return_replaced_empty_space_by_custom_char()
+    branchPrefix = taskPrefixEntry.get().upper().replace('\n', '').replace('\r', '') + "/"
+    branchName = return_replaced_empty_space_by_custom_char().replace('\n', '').replace('\r', '')
 
     window.clipboard_clear()
     window.clipboard_append("git checkout -b " + branchPrefix + branchName)
