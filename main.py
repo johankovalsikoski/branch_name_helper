@@ -26,7 +26,7 @@ def show_branch_name():
     branchName = return_replaced_empty_space_by_custom_char()
 
     window.clipboard_clear()
-    window.clipboard_append("git checkout -b " + branchPrefix + branchName)
+    window.clipboard_append("git checkout -b " + branchPrefix.replace('\n', '').replace('\r', '') + branchName.replace('\n', '').replace('\r', ''))
     window.update
 
 
